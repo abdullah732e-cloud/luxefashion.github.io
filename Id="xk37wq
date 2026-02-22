@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Fashion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        a {
+            text-decoration: none;
+            color: #D4AF37;
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        header nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1514996937319-344454492b37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGZhc2hpb258ZW58MHx8fHwxNjg3NTY5OTk5&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center;
+            background-size: cover;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+        }
+        .hero h1 {
+            font-size: 48px;
+            text-align: center;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Featured Boards */
+        .boards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .board {
+            flex: 1 1 calc(33% - 20px);
+            min-width: 250px;
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .board img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Blog Section */
+        .blog-posts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .blog-post {
+            flex: 1 1 calc(33% - 20px);
+            min-width: 250px;
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .blog-post img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #D4AF37;
+            color: #000000;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        /* Contact Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        button[type="submit"] {
+            background-color: #D4AF37;
+            color: #000000;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .boards, .blog-posts {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Luxe Fashion</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Your Daily Style Inspiration</h1>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Luxe Fashion</h2>
+        <p>Luxe Fashion shares daily style inspiration, curated outfits, and top affiliate fashion finds to elevate your wardrobe. Follow us for chic looks and fashion tips!</p>
+    </section>
+
+    <!-- Featured Boards Section -->
+    <section id="boards">
+        <h2>Featured Boards</h2>
+        <div class="boards">
+            <div class="board">
+                <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Trendy Outfits">
+                <h3>Trendy Outfits</h3>
+            </div>
+            <div class="board">
+                <img src="https://images.unsplash.com/photo-1520962911157-1e5d5d96c77f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Workwear Looks">
+                <h3>Workwear Looks</h3>
+            </div>
+            <div class="board">
+                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Budget Finds">
+                <h3>Budget-Friendly Finds</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-posts">
+            <div class="blog-post">
+                <img src="https://images.unsplash.com/photo-1542060745-6c3478a6b19b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Blog 1">
+                <h3>Top 10 Summer Dresses</h3>
+                <p>Discover the most stylish summer dresses to stay trendy. <a href="#" class="btn">Read More</a></p>
+            </div>
+            <div class="blog-post">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Blog 2">
+                <h3>Must-Have Accessories</h3>
+                <p>Complete your outfits with these essential accessories. <a href="#" class="btn">Read More</a></p>
+            </div>
+            <div class="blog-post">
+                <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Blog 3">
+                <h3>Budget-Friendly Fashion</h3>
+                <p>Find amazing fashion deals without breaking the bank. <a href="#" class="btn">Read More</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop / Affiliate Section -->
+    <section id="shop">
+        <h2>Shop / Affiliate Deals</h2>
+        <div class="boards">
+            <div class="board">
+                <img src="https://images.unsplash.com/photo-1503342452485-86fe9d4371f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Dress">
+                <h3>Summer Dress</h3>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="board">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Bag">
+                <h3>Chic Handbag</h3>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="board">
+                <img src="https://images.unsplash.com/photo-1495121605193-b116b5b09b4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Shoes">
+                <h3>Stylish Shoes</h3>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Luxe Fashion. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
